@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&family=Permanent+Marker&display=swap");
+$title: "Permanent Marker", cursive;
+$links: "Indie Flower", cursive;
+$text: "Lato", sans-serif;
+$back: #fef4a9;
+$color: #3b9a9c;
+$color2: #4bc2c5;
+$light: #78fee0;
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  background-color: #fef4a9;
+}
+
+#flipbook {
+  margin-top: 2rem;
+  width: 800px;
+  height: 600px;
+  a {
+    font-family: $links;
+    color: $color;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: $color2;
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-family: $text;
+    padding: 0px 20px;
+  }
+  h1 {
+    font-family: $title;
+    letter-spacing: 3px;
+    color: $color;
+    padding-left: 0.5rem;
+  }
+  h2,
+  h3,
+  h4 {
+    padding: 0px 20px;
+  }
+  .w3-panel {
+    margin-top: 20px;
+    background-color: $color2;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 20px;
+  }
+  .shadow {
+    box-shadow: 10px 4px 10px black;
+  }
+  .page {
+    width: 400px;
+    height: 600px;
+    background: whitesmoke;
+  }
+  .hard {
+    background-image: url("/pictures/cover-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    p {
+      @extend h1;
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+  .pageNum {
+    font-family: $links;
+    color: $color;
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+  }
+  .content-list {
+    @extend .pageNum;
+    font-size: small;
+  }
+  .p2 {
+    //CONTENT-LIST
+    text-align: center;
+    h2 {
+      @extend h1;
+    }
+    ol {
+      text-align: left;
+      list-style-type: none;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .final {
+    background-image: linear-gradient(to bottom, whitesmoke, #136f63);
+    img {
+      max-width: 100%;
+      pointer-events: none;
+    }
+    p {
+      font-family: $links;
+    }
+    a {
+      color: white;
+      padding: 0 5px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #flipbook {
+    margin-top: 0;
+    width: 300px;
+    p {
+      font-size: 13px;
+    }
+  }
+}

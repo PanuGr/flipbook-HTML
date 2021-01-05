@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="html, tags, form, element, website, title, attribute"
+    />
+    <meta
+      name="description"
+      content="A simple HTML guide with all the necessary information, so you can start making your own website from scratch! "
+    />
+    <meta name="author" content="Panagiotis Panagiotakopoulos" />
+    <link rel="stylesheet preload" as="style" href="/css/css-flipbook.css" />
+    <link rel="stylesheet prefetch" href="/css/html-pages.css" />
+    <link rel="icon" href="/pictures/favicon/favicon.ico" type="image/x-icon" />
+    <title>Simple HTML guide</title>
+  </head>
+  <body>
+    <main>
+      <article id="flipbook">
+        <section class="hard">
+          <h1>SIMPLE GUIDE TO HTML</h1>
+          <p>by Panagiotis Panagiotakopoulos</p>
+        </section>
+        <section>
+          <h2>Contents</h2>
+          <ol>
+            <li><a>CHAPTER I: INTRO......3</a></li>
+            <li><a>CHAPTER II: STRUCTURE......5</a></li>
+            <li><a>CHAPTER III: ELEMENTS......7</a></li>
+            <li><a>CHAPTER IV: SEMANTIC HTML......22</a></li>
+            <li><a>CHAPTER V: WHAT'S NEXT?......26</a></li>
+          </ol>
+        </section>
+        <section>
+          <h2>Introduction</h2>
+          <p>
+            If you always have wanted to make a website, then you came to the
+            right place! Here, you will get the tools to build a website all by
+            yourself!
+          </p>
+          <p>
+            Making a website is not so difficult as you may think. All you need
+            is basically a text editor. Even the <em>notepad</em> will do the
+            job. However things get done easier and faster with some program
+            that supports programming languages. I personally use the
+            <em>Visual Studio Code</em>, which is free to download and easy to
+            use. If you wish to code with that program, you can download it and
+            there are plenty of tutorials on YouTube.
+          </p>
+          <p>
+            Websites run on HTML code &#128565; <br />
+            I'll give a bit of theory so we are in the same page. &#128578;
+          </p>
+          <p class="w3-panel">
+            HTML is the standard language for Web pages <br />
+            With HTML you can create your own Website <br />
+            HTML is easy to learn
+          </p>
+          <p class="pageNum">-3-</p>
+        </section>
+        <section>
+          <h3>What is HTML?</h3>
+          <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of <em>elements</em></li>
+          </ul>
+          <h3>What is an "Element"?</h3>
+          <ul>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements are represented by <em>tags</em></li>
+            <li>
+              Browsers do not display the HTML tags, but use them to render the
+              content of the page
+            </li>
+            <li>
+              HTML tags contain content labeled by a name such as "heading",
+              "paragraph", "table", and so on
+            </li>
+          </ul>
+          <h3>What is a "tag"?</h3>
+          <p>
+            HTML tags usually come in pairs. The <em>opening tag</em> (&lt;&gt;)
+            and the <em>closing tag</em> (&lt;/&gt;) . Some tags don't require a
+            closing tag. Those are <em>self-closed tags</em>. <br />
+            HTML tags are element names surrounded by angle brackets:
+          </p>
+          <p class="w3-panel">
+            &lt;tagname&gt; content goes here...&lt;/tagname&gt;
+          </p>
+          <p class="pageNum">-4-</p>
+        </section>
+        <section>
+          <h2>Structure</h2>
+          <p>
+            So, now that we understand each other and without any further delay,
+            let's dive into making our first webpage! &#128515; <br />
+            When you create a new file, either in notepad or in Visual Studio
+            Code, you need to save it as a html file. If the file's extension is
+            not (.html), the browser won't be able to read the html code.
+            <br /><br />
+            The first line of code must be the
+            <code><b>&lt;!DOCTYPE html&gt;</b></code> declaration. <br />
+            This represents the document type, which in our case is html and it
+            helps browsers to display our web pages correctly. <br />
+            After this, we are ready to start our html document. <br /><br />
+            The HTML document itself begins with
+            <code><b>&lt;html&gt;</b></code> and ends with
+            <code><b>&lt;/html&gt;</b></code
+            >. <br />
+            In between we can add the
+            <code><b>&lt;head&gt;...&lt;/head&gt;</b></code> element. Inside the
+            <em>head</em> element, we can add an important tag, the
+            <code><b>&lt;title&gt;</b></code
+            >. (<small>
+              remember to add the closing tag after you write the title
+              &#128521;</small
+            >) <br />
+            The <em>title</em> shows the title of your webpage on your browser's
+            tab.
+          </p>
+          <!--           <img
+          loading="lazy"
+          src="/pictures/The title.jpg"
+          alt="An example of my webpage's title"
+          width="300px"
+        />
+        <p>
+        The visible part of the HTML document is between
+        <code><b>&lt;body&gt;</b></code> and <code><b>&lt;/body&gt;</b></code
+        >. This comes after the <em>head</em> element. <br />
+        So, after the <em>!DOCTYPE</em> declaration, this is how the structure
+        should look so far:</p>
+ -->
+          <p class="pageNum">-5-</p>
+        </section>
+        <section>
+          <div
+            role="none"
+            style="
+              width: 99%;
+              border: 1px solid grey;
+              padding: 3px;
+              margin: 0;
+              background-color: #ddd;
+            "
+          >
+            &lt;html&gt;
+            <div
+              role="none"
+              style="
+                width: 90%;
+                border: 1px solid grey;
+                padding: 3px;
+                margin: 20px;
+              "
+            >
+              &lt;head&gt;
+              <div
+                role="none"
+                style="
+                  width: 90%;
+                  border: 1px solid grey;
+                  padding: 5px;
+                  margin: 20px;
+                "
+              >
+                &lt;title&gt;Page title&lt;/title&gt;
+              </div>
+              &lt;/head&gt;
+            </div>
+            <div
+              role="none"
+              style="
+                width: 90%;
+                border: 1px solid grey;
+                padding: 3px;
+                margin: 20px;
+                background-color: #ddd;
+              "
+            >
+              &lt;body&gt;
+              <div
+                role="none"
+                style="
+                  width: 90%;
+                  border: 1px solid grey;
+                  padding: 3px;
+                  margin: 20px;
+                  background-color: #fff;
+                "
+              >
+                <div
+                  role="none"
+                  style="
+                    width: 90%;
+                    border: 1px solid grey;
+                    padding: 5px;
+                    margin: 20px;
+                  "
+                >
+                  element
+                </div>
+                <div
+                  role="none"
+                  style="
+                    width: 90%;
+                    border: 1px solid grey;
+                    padding: 5px;
+                    margin: 20px;
+                  "
+                >
+                  element
+                </div>
+                <div
+                  role="none"
+                  style="
+                    width: 90%;
+                    border: 1px solid grey;
+                    padding: 5px;
+                    margin: 20px;
+                  "
+                >
+                  another html element
+                </div>
+              </div>
+              &lt;/body&gt;
+            </div>
+            &lt;/html&gt;
+          </div>
+          <p>
+            Now we are ready to populate our webpage with elements such as
+            headings,paragraphs, links, images and so on &#128515;
+          </p>
+          <p class="pageNum">-6-</p>
+        </section>
+        <section>
+          <h2>Elements</h2>
+          <h3>Headings</h3>
+          <p>
+            Heading is a title. It may be the title of your article for example.
+            <br />
+            Headings come is 6 sizes and they are defined by tags from
+            <code><b>&lt;h1&gt;</b></code> for the most important title to
+            <code><b>&lt;h6&gt;</b></code> for the least important.
+          </p>
+          <p class="w3-panel">
+            For example: <br />
+            This site's title is typed as:<code
+              >&lt;h1&gt;Build your own website&lt;/h1&gt;</code
+            ><br />
+            The chapters are typed as:<code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
+          </p>
+          <h3>Paragraphs</h3>
+          <p>
+            Every website has text. You can type your text using the
+            <b>p</b> element. The browser automatically adds some margin and
+            font to your text but you can change that later. <br />
+            Note, that your text editor will ignore any extra spaces or lines
+            you add. If you want to enter a new line to your text use the
+            <b>br</b> tag.
+          </p>
+          <p class="w3-panel" style="line-height: 1.2em">
+            For example: <br />
+            <code
+              >&lt;p&gt;This is a paragraph which &lt;br&gt;<br />continues to a
+              second line &lt;/p&gt;</code
+            >
+          </p>
+          <p class="pageNum">-7-</p>
+        </section>
+        <section>
+          <h4>Text Formatting</h4>
+          <p>
+            HTML contains several elements for defining text with a special
+            meaning:
+          </p>
+          <ul>
+            <li><code>&lt;b&gt;</code> - Bold text</li>
+            <li><code>&lt;em&gt;</code> - Italic text</li>
+            <li><code>&lt;mark&gt;</code> - Marked text</li>
+            <li><code>&lt;small&gt;</code> - Small text</li>
+            <li><code>&lt;del&gt;</code> - Deleted text</li>
+            <li><code>&lt;ins&gt;</code> - Underlined text</li>
+            <li><code>&lt;sub&gt;</code> - Subscript text</li>
+            <li><code>&lt;sup&gt;</code> - Superscript text</li>
+          </ul>
+          <ul class="w3-panel" style="list-style: none">
+            <li>For Example:</li>
+            <li><code> &lt;b&gt;Hello&lt;/b&gt;: </code> <b>Hello</b></li>
+            <li><code>&lt;em&gt;Hello&lt;/em&gt;:</code> <em>Hello</em></li>
+            <li>
+              <code>&lt;mark&gt;Hello&lt;/mark&gt;:</code> <mark>Hello</mark>
+            </li>
+            <li>
+              <code>&lt;small&gt;Hello&lt;/small&gt;:</code>
+              <small>Hello</small>
+            </li>
+            <li><code>&lt;del&gt;Hello&lt;/del&gt;:</code> <del>Hello</del></li>
+            <li><code>&lt;ins&gt;Hello&lt;/ins&gt;:</code> <ins>Hello</ins></li>
+            <li>
+              <code>&lt;sub&gt;Hello&lt;/sub&gt;:</code> <sub>Hello</sub> world
+            </li>
+            <li>
+              <code>&lt;sup&gt;Hello&lt;/sup&gt;:</code> <sup>Hello</sup> world
+            </li>
+          </ul>
+          <p class="pageNum">-8-</p>
+        </section>
+        <section>
+          <h4>HTML Quotation</h4>
+          <p>
+            Sometimes you need to quote something, use a abbreviation or an
+            acronym, like "HTML", "CSS", "Mr.", "Dr.", "etc", "ATM". <br />
+            In these cases, Html provides tags that you can use, such as "q" and
+            "abbr".
+          </p>
+          <p>
+            The <code>&lt;q&gt;</code>tag defines a short quotation. Browsers
+            normally insert quotation marks around the quotation.
+          </p>
+          <p>
+            The <code>&lt;abbr&gt;</code>tag defines abbreviation or an acronym.
+            Marking abbreviations can give useful information to browsers,
+            translation systems and search-engines. <br />
+            You can use the global <code>title</code> attribute to show the
+            description for the abbreviation/acronym when you mouse over the
+            element.
+          </p>
+          <p class="w3-panel">
+            For Example: <br />
+            <q>Learning never exhausts the mind</q>(<code
+              >&lt;q&gt;Learning never exhausts the mind&lt;/q&gt;</code
+            >
+            ) <br />
+            <abbr title="Hyper Text Markup Language">HTML</abbr> is easy to
+            learn. (<code
+              >&lt;abbr title="Hyper Text Markup
+              Language"&gt;HTML&lt;/abbr&gt;is easy to learn.</code
+            >
+            )
+          </p>
+          <p class="pageNum">-9-</p>
+        </section>
+        <section>
+          <h3>Lists</h3>
+          <p>
+            There are two kinds of lists. The unordered list, a list with
+            bullets and the ordered list, a list with numbers. <br />
+            The unordered list starts with the <code>&lt;ul&gt;</code> tag and
+            nested inside each item in the list starts with the
+            <code>&lt;li&gt;</code> tag
+          </p>
+          <p>
+            The difference in the ordered list is that it starts with the
+            <code>&lt;ol&gt;</code> tag
+          </p>
+          <p class="w3-panel">
+            <code
+              >&lt;ul&gt; <br />
+              &lt;li&gt;apples&lt;/li&gt; <br />
+              &lt;li&gt;oranges&lt;/li&gt; <br />
+              &lt;/ul&gt;
+            </code>
+          </p>
+          <h3>Links</h3>
+          <p>
+            Every now and then you will want to add some links, either external,
+            leading to some other website or internal, leading to some other
+            content inside your webpage. <br />
+            You add link with the <b>a</b> tag. The link element needs at least
+            one parameter, which you type inside the opening tag and that is the
+            <b>url</b> of your link. The link's address can be on the internet
+            or local, on your computer.
+          </p>
+          <p class="pageNum">-10-</p>
+        </section>
+        <section>
+          <p>
+            If you don't add this parameter your link simply won't work. Between
+            the opening and closing tag you write a text that you want to
+            appear.
+            <br /><br />
+            There are many parameters that for every html element and they are
+            called <em>attributes</em>. <br />
+            However the attribute that we need right now for our links to work
+            is
+            <b>href="url-address"</b>.
+          </p>
+          <p class="w3-panel">
+            For example: <br />
+            <code class="small-screen"
+              >&lt;a href="http://mycodingjourney...."&gt;</code
+            >
+            <a style="color: beige" href="/index.html" target="_blank"
+              >This is a link to my website</a
+            >
+            <code>&lt;/a&gt;</code>
+          </p>
+          <p>For a local address:</p>
+          <ul>
+            <li>
+              if the destination file is in the same folder as your current
+              file, you type: <code>href="./the link's location"</code>
+            </li>
+            <li>
+              if the destination file is one folder above your current file, you
+              type: <code>href="../the link's location"</code>
+            </li>
+            <li>
+              Otherwise, you type the whole local address of your file's
+              destination on your computer.
+            </li>
+          </ul>
+          <p class="pageNum">-11-</p>
+        </section>
+        <section>
+          <h3>Media</h3>
+          <h4>Images</h4>
+          <p>
+            How much boring would be a website without pictures, right? <br />
+            Fear not, because we are able to add any kind of image on our
+            site!&#128515; <br />
+            We add pictures with the tag <b>img</b>. This tag is
+            <b>self-closed</b>, it doesn't require a closing tag. <br /><br />
+            It needs at least one attribute, the <b>src=""</b>, which works the
+            same way as the <em>href</em> for the links. Another attribute that
+            we can use is the <b>alt=""</b>. The <em>alt</em> attribute is
+            useful because we can add a small text,invisible to the viewers,
+            describing the picture, in case the browser doesn't load the
+            picture. Also screen readers will read out loud the picture's
+            description. You can also specify the <b>width=""</b> and the
+            <b>height=""</b> of your picture either in pixels or on percentage,
+            to make sure that the image has the dimensions that you like. <br />
+            Let's see an example:
+          </p>
+          <p class="pageNum">-12-</p>
+        </section>
+        <section>
+          <aside class="w3-panel">
+            <p>
+              The picture was added by the following code: <br />
+              <code
+                >&lt;img src="https://source.unsplash.com/4-4WPFLVhAY/"
+                width="300px" alt="Young teen doing schoolwork at home after UK
+                schools close due to the Coronavirus."&gt;<br
+              /></code>
+            </p>
+            <img
+              loading="lazy"
+              src="https://source.unsplash.com/4-4WPFLVhAY/"
+              width="300px"
+              alt="Young teen doing schoolwork at home after UK schools close due to the Coronavirus."
+            />
+          </aside>
+
+          <p class="pageNum">-13-</p>
+        </section>
+        <section>
+          <h4>Audio</h4>
+          <p>
+            To play an audio file in HTML, use the
+            <code>&lt;audio&gt;</code> element. Browsers support .wav, .ogg,
+            .mpeg, .mp3 and .mp4 audio formats.
+          </p>
+          <br />
+          <p>
+            The <code>audio</code> tag accepts several attributes that can come
+            handy: <br />
+          </p>
+          <ul>
+            <li>
+              <code>src=""</code>: Well, that's required and it specifies the
+              URL of the audio file
+            </li>
+            <li>
+              <code>controls</code>: Required and it specifies that audio
+              controls should be displayed (such as a play/pause button)
+            </li>
+            <li>
+              <code>autoplay</code>: Specifies that the audio will start playing
+              as soon as it is ready
+            </li>
+            <li>
+              <code>loop</code>: Specifies that the audio will start over again,
+              every time it is finished
+            </li>
+            <li>
+              <code>muted</code>: Specifies that the audio should be muted
+            </li>
+          </ul>
+          <p class="w3-panel">
+            For Example: <br />
+            <audio controls src="/pictures/tubebackr-top-of-the-world.mp3">
+              Audio not supported
+            </audio>
+            <br />
+            <code
+              >&lt;audio controls src="<em>url link</em
+              >"&gt;&lt;/audio&gt;</code
+            >
+          </p>
+          <p class="pageNum">-14-</p>
+        </section>
+        <section>
+          <h4>Video</h4>
+          <p>
+            The HTML <code>video</code> element is used to show a video on a web
+            page and it has same attributes as the <code>audio</code> tag.
+            <br />
+            You can also add <code>width</code> and
+            <code>height</code> attributes, if you want to specify the video's
+            size.
+          </p>
+          <p class="w3-panel">
+            For Example: <br />
+            <video
+              controls
+              width="320px"
+              src="/pictures/two-hands-typing-on-a-keyboard-.mp4"
+            >
+              Video not supported
+            </video>
+            <br />
+            <code
+              >&lt;video controls width="320px" src="<em>url link</em
+              >"&gt;&lt;/video&gt;</code
+            >
+          </p>
+          <p class="pageNum">-15-</p>
+        </section>
+        <section>
+          <h3>Tables</h3>
+          <p>
+            Sometimes you might need to display info like prices, scores, data
+            etc. These kind of data are tabular so the best way to present them
+            is through a table, like an excel table. <br />
+            Before we display the data we must manually create the "table"
+            element along with the rows and columns.
+          </p>
+          <p>
+            So first we create the table by <code>table</code> tag and then
+            nested inside the table we create the rows with the
+            <code>tr</code> tag.
+            <br />
+            Nested in the rows, we create the columns, which contain our data,
+            by using the <code>td</code> tag. <br />
+            If our data expand to next columns, we use the
+            <code>colspan=""</code> attribute. The number tells in how many
+            columns the data will span and it has to be bigger than 1.
+          </p>
+          <table class="w3-panel">
+            <tr>
+              <td>For Example:</td>
+            </tr>
+            <tr>
+              <td>Computer</td>
+              <td>Laptop</td>
+            </tr>
+            <tr>
+              <td>Console</td>
+              <td>Xbox</td>
+            </tr>
+            <tr>
+              <td>
+                That was coded as:
+                <code
+                  >&lt;table&gt;<br />
+                  &lt;tr&gt; &lt;td&gt;Computer&lt;/td&gt;<br />
+                  &lt;td&gt;Laptop&lt;/td&gt;<br />
+                  &lt;/tr&gt; ....&lt;/table&gt;</code
+                >
+              </td>
+            </tr>
+          </table>
+          <p class="pageNum">-16-</p>
+        </section>
+        <section>
+          <h3>Forms</h3>
+          <p>
+            An HTML form is used to collect user input. Every time you answer to
+            a questionnaire or you order food from your favorite restaurant, you
+            fill in a form. <br />
+            The <code>form</code> element defines a form that is used to collect
+            user input. An HTML form contains form elements. Form elements are
+            different types of input elements, like: <br />
+            text fields, checkboxes, radio buttons, submit buttons, and so on.
+          </p>
+          <p>
+            The <code>form</code> needs two attributes:
+            <code>action=""</code> contains the target-location where the form
+            will be submitted. <code>method="POST or GET"</code> tells which
+            <br />
+            method the browser will use to send the information collected by the
+            form. <code>POST</code> method is more secured and it's used for
+            sending <em>sensitive</em> information.
+          </p>
+          <p class="pageNum">-17-</p>
+        </section>
+        <section>
+          <h4>Inputs</h4>
+          <p>
+            Then we can add our inputs, nested in the form. <br />
+            The self-closed <code>input</code> tag is the
+            <b>most important</b> form element, because it displays several
+            inputs,depending on the type attribute:
+          </p>
+          <ul>
+            <li>
+              <code>&lt;input type="text"&gt;</code>: It creates a text field.
+            </li>
+            <li>
+              <code>&lt;input type="email"&gt;</code>: It creates a text field
+              that accepts a valid e-mail address.
+            </li>
+            <li>
+              <code>&lt;input type="password"&gt;</code>: It creates a text
+              field that will replace the text with dots.
+            </li>
+            <li>
+              <code>&lt;input type="number"&gt;</code>: It creates a little box
+              where the user can add numbers. We can add the
+              <code>step="1"</code> attribute to add clickable arrows that
+              change the numbers
+            </li>
+            <li>
+              <code>&lt;input type="submit"&gt;</code>: It creates a button for
+              sending the form. We can add the <code>value=""</code> attribute
+              to write a text which will be shown <br />
+              otherwise the default text is <em>submit</em>.
+            </li>
+          </ul>
+          <p>
+            The <code>input</code> tag needs two attributes that are sent as
+            pairs to the server when the form is submitted. The
+            <code>name=""</code> contains the name of the input field. The
+            <code>value=""</code> contains the data. <br />
+            If we leave it empty, the input's value will be the user's data. But
+            if we write something, our text will be sent as
+            <em>input</em> instead.
+          </p>
+          <p class="pageNum">-18-</p>
+        </section>
+        <section>
+          <h4>Textarea</h4>
+          <p>
+            The <code>input type="text"</code> will add a small text field. If
+            we want the user to write a bigger text, then we need the
+            <code>textarea</code> tag. <br />
+            We can define its size by adding <code>cols=""</code> and
+            <code>rows=""</code>.
+          </p>
+          <h4>Label</h4>
+          <p>
+            Another important tag is the <code>label</code>. That shows the
+            text, connected with our input. To connect the
+            <code>input</code> with <code>label</code> we need an
+            <code>id</code> attribute on input and a <code>for</code> attribute
+            on label. <br />
+            An advantage for using a label element is that when the user clicks
+            the text, the cursor will appear inside the input area.
+          </p>
+          <p class="pageNum">-19-</p>
+        </section>
+        <section>
+          <h4>Form Validation</h4>
+          <p>
+            We always need to validate the user's input so we catch errors
+            before the user submits the data to our server. <br />
+            The Html5 language has build-in form validation that saves time and
+            make forms user-friendly.
+          </p>
+          <ul>
+            <li>
+              The <code>required</code> attribute throws an error if the input
+              is empty.
+            </li>
+            <li>
+              If we set a <code>min=""</code> and/or <code>max=""</code> number,
+              there will be an error if the user tries to add something else.
+            </li>
+            <li>
+              For the text areas, if we don't want huge messages, we can set a
+              cap-limit by adding <code>minlength=""</code> and/or
+              <code>maxlength=""</code> attributes.
+            </li>
+            <li>
+              The <code>email</code> attribute will automatically check if the
+              address contains a @ symbol.
+            </li>
+          </ul>
+          <p class="pageNum">-20-</p>
+        </section>
+        <section>
+          <form>
+            <p>For Example:</p>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" value="First Name" />
+            <br />
+            <label for="mail">Email:</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="email address"
+            />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="1234" />
+            <br />
+            <input type="submit" value="Send" aria-label="submit" />
+          </form>
+          <p>
+            This was coded as: <code>&lt;form &gt;</code> <br />
+            <code>&lt;label for="name"&gt;Your name:&lt;/label&gt;</code><br />
+            <code
+              >&lt;input type="text" id="name" name="name" value="First
+              Name&gt;</code
+            ><br />
+            <code>&lt;label for="mail"&gt;Email:&lt;/label&gt;</code><br />
+            <code
+              >&lt;input type="email" name="mail" id="mail" placeholder="email
+              address"&gt;</code
+            ><br />
+            <code>&lt;label for="password"&gt;Password:&lt;/label&gt;</code
+            ><br />
+            <code
+              >&lt;input type="password" name="password" id="password"
+              value="1234"&gt;</code
+            >
+            <br />
+            <code
+              >&lt;input type="password" name="password" id="password"
+              value="1234"&gt;</code
+            >
+            <br />
+            <code>&lt;input type="submit" value="Send"&gt;</code> <br />
+            <code>&lt;/form&gt;</code>
+          </p>
+          <p class="pageNum">-21-</p>
+        </section>
+        <section>
+          <h2>Semantic HTML</h2>
+          <p>
+            On the <em>structure</em> chapter we saw how the elements are
+            contained into <code>body</code> tag which is contained into
+            <code>html</code> tag. <br />
+            Think these as "boxes" which contain the information.
+            <code>img</code> tag for instance is a semantic element that
+            contains a link to your image. <br />
+            Semantic elements provide content for the information and it's good
+            to use them because:
+          </p>
+          <ul>
+            <li>gives structure to your code</li>
+            <li>make your code easily understandable by other developers</li>
+            <li>search engines understand better the content</li>
+            <li>
+              makes the website more accessible to people who use screen-readers
+            </li>
+          </ul>
+          <p class="pageNum">-22-</p>
+        </section>
+        <section>
+          <p>
+            The <code>header</code> element usually contains the navigation
+            links, intro content or the site's heading. <br />
+            <br />
+
+            The <code>nav</code> element contains your navigation links, menus,
+            links etc. <br />
+            <br />
+
+            The <code>main</code> element contains your main content. A
+            <code>nav</code> element cannot contain a <code>main</code> element
+            but the <code>main</code> can contain a <code>nav</code>. <br />
+            <br />
+
+            The <code>footer</code> element is separated from the
+            <code>main</code> element and it's located usually at the end of the
+            webpage, containing info as contact, address, sitemap etc. <br />
+            <br />
+
+            As we said, it's good to use these "boxes" as they group up your
+            information and you can then easily style them. There are semantic
+            elements that can be nested inside the <code>main</code> element.
+          </p>
+          <p class="pageNum">-23-</p>
+        </section>
+        <section>
+          <p>
+            The <code>section</code> element is a general element that groups up
+            content with similar subject. A website's mainpage could be split
+            into different sections for news, items, contact etc. <br />
+            <br />
+
+            The <code>article</code> element contains information as your text,
+            images, lists etc. <br />
+            <br />
+
+            The <code>aside</code> element can be used alongside article and
+            section for providing extra info. <br />
+            <br />
+            The <code>figure</code> element can contain any form of media.
+            <br />
+            <br />
+
+            The <code>figcaption</code> element is nested inside the figure and
+            it contain text describing the media in the
+            <code>figure</code> element.
+          </p>
+          <p class="pageNum">-24-</p>
+        </section>
+        <section>
+          <figure>
+            <p>A <code>figure</code> example:</p>
+            <img
+              loading="lazy"
+              src="/pictures/brushes.jpeg"
+              width="160"
+              alt="brushes for painting"
+            />
+            <figcaption>Brushes for painting</figcaption>
+          </figure>
+          <p>
+            This was coded as: <code>&lt;figure&gt;</code> <br />
+            <code>&lt;img&gt;</code>...(with the usual attributes) <br />
+            <code>&lt;figcaption&gt;</code> for painting
+            <code>&lt;/figcaption&gt;</code> <br />
+            <code>&lt;/figure&gt;</code>
+          </p>
+          <p class="pageNum">-25-</p>
+        </section>
+        <section>
+          <h2>The End?</h2>
+          <p>
+            This is it basically. Congratulations, you made your own website!
+            &#128079;&#128079;
+          </p>
+          <p>
+            The next step into making a website is style. To learn how to add
+            colors, fonts and design on your site, follow my
+            <a href="css-flipbook.html" target="_blank">Simple Guide to CSS</a>.
+          </p>
+          <p class="pageNum">-26-</p>
+        </section>
+      </article>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous" 
+    ></script>
+    <script defer src="/javascript/turn.min.js"></script>
+    <script defer src="/javascript/flipbook.js"></script>
+    <script>
+      //CONTENTS
+ const intro=document.getElementsByTagName("li")[0]; const structure=document.getElementsByTagName("li")[1]; const elements=document.getElementsByTagName("li")[2]; const semantic=document.getElementsByTagName("li")[3]; const next=document.getElementsByTagName("li")[4]; intro.onclick=function (){ $("#flipbook").turn("page", 3);}; structure.onclick=function (){ $("#flipbook").turn("page", 5);}; elements.onclick=function (){ $("#flipbook").turn("page", 7);}; semantic.onclick=function (){ $("#flipbook").turn("page", 22);}; next.onclick=function (){ $("#flipbook").turn("page", 26);};
+    </script>
+  </body>
+</html>
